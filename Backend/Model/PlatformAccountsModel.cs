@@ -10,7 +10,7 @@ public enum Platforms
 public class PlatformAccount
 {
     public int Id {get; set;}
-    public string? UserId {get; set;}
+    public required string UserId {get; set;}
     public required AppUserModel User {get; set;} 
 
     public Platforms Platform {get; set;}

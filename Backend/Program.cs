@@ -12,8 +12,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 });
 
 builder.Services.AddAuthorization();
-builder.Services.AddIdentityApiEndpoints<AppUserModel>();
-
+builder.Services.AddIdentityApiEndpoints<AppUserModel>()
+    .AddEntityFrameworkStores<ApplicationDbContext>();
 
 
 
